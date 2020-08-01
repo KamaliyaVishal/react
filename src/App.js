@@ -4,6 +4,7 @@ import './App.css';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Menu from './componets/MenuComponets';
 import { DISHES } from './shared/dishes';
+import Dishdetail from './componets/DishdetailComponent';
 
 class App extends Component {
 
