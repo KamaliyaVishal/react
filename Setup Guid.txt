@@ -1,0 +1,116 @@
+$ git remote add origin https://vkamaliya@bitbucket.org/vkamaliya/git-test.git
+=join local repo to Online Git Repositories 
+
+HTTPS: $ git remote set-url origin https://github.com/KamaliyaVishal/git-test.git
+SSH: $ git remote set-url origin git@github.com:KamaliyaVishal/git-test.git
+=changing the path of origin to join local repo to Online Git Repositories
+
+$ git push -u origin master
+=push local repo to Online Git Repositories at set orogin
+
+$ git clone https://github.com/KamaliyaVishal/git-test.git
+=clone/copy Online Git Repositories to local repo,
+
+@Error: SSL certificate problem: self signed certificate in certificate chain
+To disable SSL verification for a specific repository
+git config --global http.sslVerify false
+
+$ git config --list
+
+D:\Workspaces\Bootstrap4\conFusion>npm cache clean --force
+npm audit
+npm audit fix
+
+NODE INSTALLATION
+
+D:\Workspaces\Git>npm init	
+
+package name: (git)
+version: (1.0.0)
+description: This is test directory to learn GIT and NODE
+entry point: (index.js) index.html
+test command:
+git repository: (https://github.com/KamaliyaVishal/git-test.git)
+keywords:
+author: Vishal Kamaliya
+license: (ISC)
+About to write to D:\Workspaces\Git\package.json:
+
+{
+  "name": "git",
+  "version": "1.0.0",
+  "description": "This is test directory to learn GIT and NODE",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamaliyaVishal/git-test.git"
+  },
+  "author": "Vishal Kamaliya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KamaliyaVishal/git-test/issues"
+  },
+  "homepage": "https://github.com/KamaliyaVishal/git-test#readme"
+}
+
+Is this OK? (yes)
+
+D:\Workspaces\Git>npm install lite-server --save-dev
+#install lite server for Node JS
+
+# Cleaning Cache and Node_module are not enough. Follow this steps:
+
+npm cache clean --force
+delete node_modules folder
+delete package.json file
+delete package-lock.json file
+npm install lite-server --save-dev
+
+add bellow details in package.json
+"scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-server"
+  },
+
+npm start
+
+Bootstrap Setup
+
+Make sure you already install GIT and Node.js in your computer
+1. Check GIT Bash is in your system($ = GIT Bash cmd).
+2. Use Node.js cmd or System CMD for Node commands start with "npm"
+
+unzip file
+D:\Workspaces\Bootstrap4\conFusion>npm install
+(# to create lite-server in Bootstrap4 directory)
+$ git init
+(# initialize the GIT)
+$ git status
+(create .gitignore and add node_modules in file this will be excluded from commit)
+$ git add .
+$ git commit -m "Initial Setup"
+D:\Workspaces\Bootstrap4\conFusion>npm install bootstrap@4.0.0 --save
+D:\Workspaces\Bootstrap4\conFusion>npm install jquery@3.5.1 popper.js@1.16.1 --save	
+D:\Workspaces\Bootstrap4\conFusion>npm install font-awesome@4.7.0 --save
+D:\Workspaces\Bootstrap4\conFusion>npm install bootstrap-social@5.1.1 --save
+
+Generate new ssh key from GIT Bash
+$ ssh-keygen -t rsa -b 4096 -C "kamaliyavishal96@gmail.com"
+$ eval $(ssh-agent -s)
+$ ssh-add ~/.ssh/id_rsa
+$ clip < ~/.ssh/id_rsa.pub 
+(above comand copy generated SSH key to clipboard. Now goto GitHub->settings->SSH and GPG keys and paste)
+
+React:
+D:\Workspaces\React>npm install -g create-react-app
+D:\Workspaces\React>create-react-app confusion
+
+D:\Workspaces\React\confusion>npm install bootstrap@4.0.0 --save
+D:\Workspaces\React\confusion>npm install reactstrap@5.0.0 react-popper@0.9.2 --save
+D:\Workspaces\React\confusion>npm install font-awesome@4.7.0 --save
+D:\Workspaces\React\confusion>npm install bootstrap-social@5.1.1 --save
+D:\Workspaces\React\confusion>npm install react-router-dom@4.2.2 --save
