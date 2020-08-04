@@ -116,6 +116,7 @@ D:\Workspaces\React\confusion>npm install bootstrap-social@5.1.1 --save
 D:\Workspaces\React\confusion>npm install react-router-dom@4.2.2 --save
 D:\Workspaces\React\confusion>npm install redux@3.7.2 --save
 D:\Workspaces\React\confusion>npm install react-redux@5.0.7 --save
+D:\Workspaces\React\confusion>npm install react-redux-form@1.16.8 --save
 
 
 Reactstrap:
