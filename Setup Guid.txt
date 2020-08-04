@@ -114,3 +114,9 @@ D:\Workspaces\React\confusion>npm install reactstrap@5.0.0 react-popper@0.9.2 --
 D:\Workspaces\React\confusion>npm install font-awesome@4.7.0 --save
 D:\Workspaces\React\confusion>npm install bootstrap-social@5.1.1 --save
 D:\Workspaces\React\confusion>npm install react-router-dom@4.2.2 --save
+
+
+
+Reactstrap:
+m-1 = margin 1 unit 
+<Col {md=10}></Col> = <div col-md-10></div>

@@ -22,16 +22,8 @@ class Main extends Component {
             comments: COMMENTS,
             promotions: PROMOTIONS,
             leaders: LEADERS
-            //selectedDish: null
         };
     }
-
-    /** onDishSelect(dishId) {
-         this.setState({ selectedDish: dishId });
-     }
-     */
-
-
 
     render() {
 
