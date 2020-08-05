@@ -117,6 +117,8 @@ D:\Workspaces\React\confusion>npm install react-router-dom@4.2.2 --save
 D:\Workspaces\React\confusion>npm install redux@3.7.2 --save
 D:\Workspaces\React\confusion>npm install react-redux@5.0.7 --save
 D:\Workspaces\React\confusion>npm install react-redux-form@1.16.8 --save
+D:\Workspaces\React\confusion>npm install redux-thunk@2.2.0 --save
+D:\Workspaces\React\confusion>npm install redux-logger@3.0.6 --save
 
 
 Reactstrap:
