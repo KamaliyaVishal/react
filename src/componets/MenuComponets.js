@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle, BreadcrumbItem, Breadcrumb } from 'reactstrap';
-import DishDetail from './DishdetailComponent';
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
 
