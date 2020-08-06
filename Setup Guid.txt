@@ -128,6 +128,7 @@ D:\Workspaces\json-server>json-server --watch db.json -d 2000 -p 3001
 // -p 3001 = set port, lite-server already run 3000 that's why we chage this
 
 D:\Workspaces\React\confusion>npm install cross-fetch@2.1.0 --save
+D:\Workspaces\React\confusion>npm install react-transition-group@2.3.0 --save
 
 
 Reactstrap:
