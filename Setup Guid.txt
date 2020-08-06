@@ -131,5 +131,6 @@ D:\Workspaces\React\confusion>npm install cross-fetch@2.1.0 --save
 D:\Workspaces\React\confusion>npm install react-transition-group@2.3.0 --save
 D:\Workspaces\React\confusion>npm install react-animation-components@3.0.0 --save
 D:\Workspaces\React\confusion>npm install prop-types@15.6.0 --save
+D:\Workspaces\React\confusion>npm run build
  
 
