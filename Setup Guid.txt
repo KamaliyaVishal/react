@@ -120,6 +120,15 @@ D:\Workspaces\React\confusion>npm install react-redux-form@1.16.8 --save
 D:\Workspaces\React\confusion>npm install redux-thunk@2.2.0 --save
 D:\Workspaces\React\confusion>npm install redux-logger@3.0.6 --save
 
+json-server setup:
+create directory 'json-server'
+D:\Workspaces\json-server>npm install -g json-server --save
+D:\Workspaces\json-server>json-server --watch db.json -d 2000 -p 3001
+// -d 2000 = 2 sec dealy while response 
+// -p 3001 = set port, lite-server already run 3000 that's why we chage this
+
+D:\Workspaces\React\confusion>npm install cross-fetch@2.1.0 --save
+
 
 Reactstrap:
 m-1 = margin 1 unit 
