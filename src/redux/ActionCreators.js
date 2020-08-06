@@ -4,25 +4,29 @@ import { baseUrl } from '../shared/baseUrl';
 import { Errors } from 'react-redux-form';
 
 //START Action Reducer: related to rendering comments //
-export const addComment = (dishId, rating, author, comment) => ({
+export const addComment = (comment) => ({
     type: ActionTypes.ADD_COMMENT,
-    payload: {
+    payload: comment
+});
+
+export const postComment = (dishId, rating, author, comment) => (dispatch) => {
+
+    const newComment = {
         dishId: dishId,
         rating: rating,
         author: author,
         comment: comment
-    }
-});
-//START Action Reducer: related to rendering comments //
+    };
+    newComment.date = new Date().toISOString();
 
-
-//Thunks with 2sec delay
-//START Action Reducer: related to rendering dishes //
-export const fetchDishes = () => (dispatch) => {
-
-    dispatch(dishesLoading(true));
-
-    return fetch(baseUrl + 'dishes')
+    return fetch(baseUrl + 'comments', {
+        method: "POST",
+        body: JSON.stringify(newComment),
+        headers: {
+            "Content-Type": "application/json"
+        },
+        credentials: "same-origin"
+    })
         .then(response => {
             if (response.ok) {
                 return response;
@@ -32,6 +36,35 @@ export const fetchDishes = () => (dispatch) => {
                 throw error;
             }
         },
+            error => {
+                throw error;
+            })
+        .then(response => response.json())
+        .then(response => dispatch(addComment(response)))
+        .catch(error => { console.log('post comments', error.message); alert('Your comment could not be posted\nError: ' + error.message); });
+};
+
+
+//Redux Thunk with 2sec delay
+//START Action Reducer: related to rendering dishes //
+export const fetchDishes = () => (dispatch) => {
+
+    dispatch(dishesLoading(true));
+
+    //Redux promise
+    return fetch(baseUrl + 'dishes')
+        .then(response => {
+            if (response.ok) {
+                //respose 200
+                return response;
+            } else {
+                //respose except 200
+                var error = new Error('Error ' + response.status + ': ' + response.statusText);
+                error.response = response;
+                throw error;
+            }
+        },
+            //Didn't got any response
             error => {
                 var errmess = new Error(error.message);
                 throw errmess;
