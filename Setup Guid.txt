@@ -129,8 +129,7 @@ D:\Workspaces\json-server>json-server --watch db.json -d 2000 -p 3001
 
 D:\Workspaces\React\confusion>npm install cross-fetch@2.1.0 --save
 D:\Workspaces\React\confusion>npm install react-transition-group@2.3.0 --save
+D:\Workspaces\React\confusion>npm install react-animation-components@3.0.0 --save
+D:\Workspaces\React\confusion>npm install prop-types@15.6.0 --save
+ 
 
-
-Reactstrap:
-m-1 = margin 1 unit 
-<Col {md=10}></Col> = <div col-md-10></div>
